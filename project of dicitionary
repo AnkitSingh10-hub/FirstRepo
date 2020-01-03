@@ -1,0 +1,36 @@
+#grading system
+jack={"name":"jack frost","assignment":[80,90,40,20],"test":[75,75],"lab":[78.20,77.20]}
+jason={"name":"jason earls","assignment":[10,20,30,40],"test":[15,15],"lab":[68.20,97.20]}
+
+
+def check(jack):
+    keys=jack.keys
+    mean1=0
+    mean2=0
+    mean3=0
+    
+    for keys in jack:
+        if(keys=="assignment"):
+            mean1=(jack["assignment"][0]+jack["assignment"][1]+jack["assignment"][2]+jack["assignment"][3])/4
+        if(keys=="test"):
+            mean2=(jack["test"][0]+jack["test"][1])/2
+        if(keys=="lab"):
+            mean3=(jack["lab"][0]+jack["lab"][1])/2
+    assignment=(10/100)*mean1
+    test=(70/100)*mean2
+    lab=(20/100)*mean3
+    
+    final=assignment+test+lab
+    
+    if(final>=90):
+    print("A")
+    elif(final>=80):
+    print("B")
+    elif(final>=70):
+    print("C")
+    else:
+    print("failed")  
+check(jason)    
+            
+                   
+           
