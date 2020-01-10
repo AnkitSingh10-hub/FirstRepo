@@ -1,0 +1,24 @@
+#ARRAY IN PYTHON.
+
+'''
+import array
+
+arr=array.array('i',[1,2,3,4,5])
+print (arr)
+
+
+'''
+'''
+from array import array as a
+arr=a('i',[1,2,3,4,5])
+print(arr)
+'''
+
+from array import array
+arr=array('i',[1,2,3])
+
+arr.remove(1)
+print(arr) 
+
+
+    
